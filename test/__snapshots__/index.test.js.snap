@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`adds it between the tag and further pseudo tags 1`] = `
+"button:not([class]):focus {
+  color: red;
+}
+"
+`;
+
+exports[`adds it to each chained tag 1`] = `
+"a:not([class]) span:not([class]) {
+  color: red;
+}
+"
+`;
+
+exports[`adds it to multiple tags 1`] = `
+"button:not([class]),
+a:not([class]) {
+  color: red;
+}
+"
+`;
+
+exports[`adds the opt out selector to the tag 1`] = `"button:not([class]) {color: red;}"`;
+
+exports[`adds the opt out selector to the tag from external file 1`] = `
+"button:not([class]) {
+    color: red;
+}"
+`;
